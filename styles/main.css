@@ -1,3 +1,35 @@
+
+/* styles/main.css */
+body {
+	background: rgb(255,127,80);
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: 'Fira Code', monospace;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 85px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+p {
+	color: white;
+	text-align: center;
+	font-family: 'Fira Code', monospace;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 20px;
+}
+
+#nav {
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Fira Code', monospace;
+	font-family: 'Darker Grotesque', sans-serif
+
 h1 {
 	text-decoration: underline;
 	color: white;
@@ -11,6 +43,5 @@ p {
 body{
 	background:rgb(119,136,153) ;
 	font-family: 'Darker Grotesque', sans-serif;
-
 }
 
