@@ -1,18 +1,14 @@
 h1 {
 	text-decoration: underline;
 	color: white;
-	font-family: 'Darker Grotesque', sans-serif;
 }
 p {
 	text-align: left;
-	color:white;
-	font-family: 'Darker Grotesque', sans-serif;
+	color:black;
+	font-size: 20px;
 }
 body{
-	background:rgb(119,136,153) ;
+	background:rgb(235,178,21) ;
 	font-family: 'Darker Grotesque', sans-serif;
 
-}
-p{
-	font-size: 25px;
 }
