@@ -1,3 +1,4 @@
+
 .slideshow-container{
 	width: 50%;
 }
@@ -9,7 +10,7 @@
 body {
 	background: rgb(252, 165, 146); 
 }
-<style>
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -107,12 +108,24 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-</style>
 #my-type{
 	text-align: center 
 	color: 146, 194, 252;
 
 }
-body {
-	background-color: 252, 165, 146; 
+
+
+h1 {
+	text-decoration: underline;
+	color: white;
+	font-family: 'Darker Grotesque', sans-serif;
 }
+p {
+	text-align: left;
+	color:white;
+	font-family: 'Darker Grotesque', sans-serif;
+}
+body{
+	background:rgb(119,136,153) ;
+	font-family: 'Darker Grotesque', sans-serif; }
+
