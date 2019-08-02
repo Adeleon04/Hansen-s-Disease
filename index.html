@@ -5,31 +5,165 @@
 	<link rel="stylesheet"
 	type="text/css"
 	href = "styles/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Fira+Code&display=swap" rel="stylesheet">
+	<link href="https://fonts.google.com/?query=proxima" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
 </head>
+
 <body>
+
 	<div id="nav">
 		<nav>
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="information.html"> Background Info</a>
-		<a href="projects.html"> Our Prototype</a>
-		<a href="contact.html">Contact</a>
+		<a class="navbar" href="index.html">Home</a>
+		<a class="navbar" href="about.html">About</a>
+		<a class="navbar" href="information.html"> Background Info</a>
+		<a class="navbar" href="projects.html"> Our Prototype</a>
+		<a class="navbar" href="contact.html">Contact</a>
 		</nav>
 	</div>
 	
 <h1> welcome</h1>
 <br>
 <br>
-<p>Our group centered our project around Hansen's Disease.</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/picture1.webp" width="700" height="500">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/picture2.jpg" width="700" height="500">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/picture3.png" width="700" height="500">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<p>Welcome to our website!</p>
+<p> We are M.A.A.I. and we are working to create more accessible awareness, screening, and treatment for leprosy in low income countries.</p>
 <br>
 <p>To learn more about statistics, history, and other background information, visit our Background Info page. </p>
+  <div class="buttons">
+  	<button onclick="window.location.href = 'file:///C:/Users/SMASH%20Scholar/Documents/GitHub/Hansen-s-Disease/information.html';">Background Info</button>
+  </div>
 <br>
 <p>For our problem statement, mission, and solution, visit our About page.</p>
+ <div class="buttons">
+  	<button onclick="window.location.href = 'file:///C:/Users/SMASH%20Scholar/Documents/GitHub/Hansen-s-Disease/about.html';">About</button>
+  </div>
 <br>
 <p> To see our prototype iterations and brainstorming, visit our Prototype page.</p>
+ <div class="buttons">
+  	<button onclick="window.location.href = 'file:///C:/Users/SMASH%20Scholar/Documents/GitHub/Hansen-s-Disease/projects.html';">Prototype</button>
+  </div>
 <br>
 <p>To learn more about our team, visit our Contact page.</p>
+ <div class="buttons">
+  	<button onclick="window.location.href = 'file:///C:/Users/SMASH%20Scholar/Documents/GitHub/Hansen-s-Disease/contact.html';">Contact</button>
+  </div>
+  <a href="">Visit our Graph</a>
 </body>
 </html>
