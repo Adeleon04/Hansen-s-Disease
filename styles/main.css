@@ -1,11 +1,10 @@
 
 /* styles/main.css */
-body {
-	background: rgb(255,127,80);
-}
+
 
 h1 {
 	color: white;
+
 	text-align: center;
 	font-family: 'Fira Code', monospace;
 	font-family: 'Darker Grotesque', sans-serif;
@@ -15,12 +14,21 @@ h1 {
 }
 
 p {
+
+	text-align: left;
+	color:black;
+	font-size: 20px;
+}
+body{
+	background:rgb(235,178,21) ;
+	font-family: 'Darker Grotesque', sans-serif;
 	color: white;
 	text-align: center;
 	font-family: 'Fira Code', monospace;
 	font-family: 'Darker Grotesque', sans-serif;
 	font-size: 20px;
 }
+
 
 #nav {
 	text-decoration: none;
