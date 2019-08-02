@@ -1,11 +1,12 @@
 
 /* styles/main.css */
+
 body {
 	background: rgb(235,178,21);
 }
-
 h1 {
 	color: white;
+
 	text-align: center;
 font-family: proxima-nova, sans-serif;
 font-style: normal;
@@ -16,7 +17,18 @@ font-weight: 100;
 }
 
 p {
+
 	color: black;
+
+	text-align: left;
+	color:black;
+	font-size: 20px;
+}
+body{
+	background:rgb(235,178,21) ;
+	font-family: 'Darker Grotesque', sans-serif;
+	color: white;
+
 	text-align: center;
 	font-family: proxima-nova, sans-serif;
 font-style: normal;
@@ -24,11 +36,13 @@ font-weight: 100;
 	font-size: 25px;
 }
 
+
 #nav {
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
 	text-align: center;
+
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
@@ -59,15 +73,41 @@ font-weight: 100;
 }
 
 {box-sizing:border-box}
+
+	font-family: 'Fira Code', monospace;
+	font-family: 'Darker Grotesque', sans-serif
+}
+.slideshow-container{
+	width: 50%;
+}
+#my-type{
+	text-align: center; 
+	color:rgb(146, 194, 252); 
+
+}
+body {
+	background: rgb(252, 165, 146); 
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
+
 .mySlides {
   display: none;
 }
+
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -75,6 +115,10 @@ font-weight: 100;
   width: auto;
   margin-top: -22px;
   padding: 16px;
+
+  padding: 16px;
+  margin-top: -22px;
+
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -83,15 +127,25 @@ font-weight: 100;
   user-select: none;
 }
 
+
+/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+
+/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
+ 
+
+/* Caption text */
+ 
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -102,6 +156,9 @@ font-weight: 100;
   text-align: center;
 }
 
+
+/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -109,6 +166,9 @@ font-weight: 100;
   position: absolute;
   top: 0;
 }
+
+
+/* The dots/bullets/indicators */
 
 .dot {
   cursor: pointer;
@@ -124,6 +184,9 @@ font-weight: 100;
 .active, .dot:hover {
   background-color: #717171;
 }
+
+
+/* Fading animation */
 
 .fade {
   -webkit-animation-name: fade;
@@ -154,3 +217,17 @@ font-weight: 100;
   width:70px;
   height:50px;
 }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#my-type{
+	text-align: center 
+	color: 146, 194, 252;
+
+}
+
+
+
+
