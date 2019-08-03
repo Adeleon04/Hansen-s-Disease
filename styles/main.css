@@ -1,19 +1,24 @@
 
 /* styles/main.css */
 
-
+body {
+	background: rgb(235,178,21);
+}
 h1 {
 	color: white;
 
 	text-align: center;
-	font-family: 'Fira Code', monospace;
-	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 85px;
+font-family: proxima-nova, sans-serif;
+font-style: normal;
+font-weight: 100;
+	font-size: 115px;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
 
 p {
+
+	color: black;
 
 	text-align: left;
 	color:black;
@@ -23,18 +28,52 @@ body{
 	background:rgb(235,178,21) ;
 	font-family: 'Darker Grotesque', sans-serif;
 	color: white;
+
 	text-align: center;
-	font-family: 'Fira Code', monospace;
-	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 20px;
+	font-family: proxima-nova, sans-serif;
+font-style: normal;
+font-weight: 100;
+	font-size: 25px;
 }
 
 
 #nav {
 	text-decoration: none;
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
+
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+
+h1 {
+	font-weight: bold;
+	color: rgb(119,136,153);
+	font-family: proxima-nova, sans-serif;
+font-style: normal;
+font-weight: 100;
+}
+p {
+	text-align: left;
+	color:rgb(119,136,153);
+	font-family: proxima-nova, sans-serif;
+font-style: normal;
+font-weight: 100;
+}
+body{
+	background: white ;
+	font-family: proxima-nova, sans-serif;
+font-style: normal;
+font-weight: 100;
+}
+
+.navbar {
+	padding:15px;
+}
+
+{box-sizing:border-box}
+
 	font-family: 'Fira Code', monospace;
 	font-family: 'Darker Grotesque', sans-serif
 }
@@ -56,10 +95,16 @@ body {font-family: Verdana, sans-serif; margin:0}
 img {vertical-align: middle;}
 
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+
+.mySlides {
+  display: none;
 }
 
 /* Next & previous buttons */
@@ -68,8 +113,12 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   width: auto;
+  margin-top: -22px;
+  padding: 16px;
+
   padding: 16px;
   margin-top: -22px;
+
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -78,18 +127,25 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
+
 /* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
+ 
+
 /* Caption text */
+ 
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -100,7 +156,9 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+
 /* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -109,7 +167,9 @@ img {vertical-align: middle;}
   top: 0;
 }
 
+
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -125,7 +185,9 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+
 /* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -143,6 +205,19 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+.buttons {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:70px;
+  height:50px;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -152,6 +227,7 @@ img {vertical-align: middle;}
 	color: 146, 194, 252;
 
 }
+
 
 
 
